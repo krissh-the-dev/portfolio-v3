@@ -1,10 +1,10 @@
 export type Theme = {
 	[scheme in ColorScheme]: {
 		primary: ColorShades;
-		secondary: ColorShades;
-		background: ColorShades;
+		background: Color;
 	};
 };
 
-export type ColorShades = [string, string, string];
+export type ColorShades = [Color, Color];
 export type ColorScheme = 'light' | 'dark';
+export type Color = string;

@@ -1,1 +1,1 @@
-export * from './Purple.theme';
+export * from './Lavender.theme';
