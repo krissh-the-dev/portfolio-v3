@@ -1,3 +1,11 @@
+import { ThemeChangeEvent } from './events/ThemeChangeEvent';
+import { LavenderTheme } from './themes';
+
 export function App() {
-	return <h1>Hello</h1>;
+	return (
+		<>
+			Hello
+			<button onClick={() => document.dispatchEvent(new ThemeChangeEvent(LavenderTheme))}>Click</button>
+		</>
+	);
 }
