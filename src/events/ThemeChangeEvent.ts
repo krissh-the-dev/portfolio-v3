@@ -1,4 +1,4 @@
-import { Theme } from '../classes/Theme';
+import { Theme } from '@classes';
 
 export class ThemeChangeEvent extends Event {
 	public static EVENT_NAME = ThemeChangeEvent.name;

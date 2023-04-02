@@ -1,9 +1,9 @@
 import { ThemeProvider } from 'styled-components';
 import { useEffect, useState } from 'react';
-import { ThemeChangeEvent } from '../events/ThemeChangeEvent';
-import { Themes } from '../themes';
-import { Theme } from '../classes/Theme';
-import { ColorScheme } from '../types/Theme.type';
+import { ColorScheme } from '@/types';
+import { Theme } from '@classes';
+import { ThemeChangeEvent } from '@events';
+import { Themes } from '@themes';
 
 export function ThemeEngine({ children }: { children: React.ReactNode }) {
 	const [theme, setTheme] = useState<Theme>(new Theme(Themes.Lavender, ColorScheme.LIGHT));

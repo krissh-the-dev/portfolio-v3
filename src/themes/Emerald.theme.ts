@@ -1,4 +1,4 @@
-import { ITheme } from '../types/Theme.type';
+import { ITheme } from '@/types';
 
 export const EmeraldTheme: ITheme = {
 	light: {

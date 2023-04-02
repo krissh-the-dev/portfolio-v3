@@ -1,4 +1,4 @@
-import { ITheme, ColorScheme } from '../types/Theme.type';
+import { ITheme, ColorScheme } from '@/types/Theme.type';
 
 export class Theme {
 	#theme: ITheme;

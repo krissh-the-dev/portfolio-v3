@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import { ProductSansFont } from '../assets/fonts';
-import { ColorScheme, ITheme } from '../types/Theme.type';
+import { ColorScheme, ITheme } from '@/types';
+import { ProductSansFont } from '@assets/fonts';
 
 const Presets = createGlobalStyle<{ theme: ITheme[ColorScheme] }>`
   :root {

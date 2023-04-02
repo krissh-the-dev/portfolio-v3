@@ -1,7 +1,7 @@
-import { Theme } from './classes/Theme';
-import { ThemeChangeEvent } from './events/ThemeChangeEvent';
-import { Themes } from './themes';
-import { ColorScheme } from './types/Theme.type';
+import { ColorScheme } from '@/types';
+import { Theme } from '@classes';
+import { ThemeChangeEvent } from '@events';
+import { Themes } from '@themes';
 
 export function App() {
 	const handleThemeChange = () => {
