@@ -2,7 +2,7 @@ import { ThemeProvider } from 'styled-components';
 import { useEffect, useState } from 'react';
 import { ThemeChangeEvent } from '../events/ThemeChangeEvent';
 import { Themes } from '../themes';
-import { Theme } from '../config/Theme';
+import { Theme } from '../classes/Theme';
 import { ColorScheme } from '../types/Theme.type';
 
 export function ThemeEngine({ children }: { children: React.ReactNode }) {

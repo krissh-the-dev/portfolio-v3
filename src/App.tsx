@@ -1,4 +1,4 @@
-import { Theme } from './config/Theme';
+import { Theme } from './classes/Theme';
 import { ThemeChangeEvent } from './events/ThemeChangeEvent';
 import { Themes } from './themes';
 import { ColorScheme } from './types/Theme.type';
