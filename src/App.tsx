@@ -1,11 +1,18 @@
+import { Theme } from './config/Theme';
 import { ThemeChangeEvent } from './events/ThemeChangeEvent';
-import { LavenderTheme } from './themes';
+import { Themes } from './themes';
+import { ColorScheme } from './types/Theme.type';
 
 export function App() {
+	const handleThemeChange = () => {
+		const theme = new Theme(Themes.Lavender, ColorScheme.DARK);
+		document.dispatchEvent(new ThemeChangeEvent(theme));
+	};
+
 	return (
 		<>
 			Hello
-			<button onClick={() => document.dispatchEvent(new ThemeChangeEvent(LavenderTheme))}>Click</button>
+			<button onClick={handleThemeChange}>Click</button>
 		</>
 	);
 }

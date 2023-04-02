@@ -1,12 +1,14 @@
-import { Theme } from '../types/Theme.type';
+import { ITheme } from '../types/Theme.type';
 
-export const EmeraldTheme: Theme = {
+export const EmeraldTheme: ITheme = {
 	light: {
 		primary: ['#0DA970', '#23CA8D'],
-		background: 's'
+		background: 's',
+		text: 's'
 	},
 	dark: {
 		primary: ['string', 'string'],
-		background: 'string'
+		background: 'string',
+		text: 'string'
 	}
 };

@@ -1,11 +1,12 @@
 import { ThemeProvider } from 'styled-components';
-import { Theme } from '../types/Theme.type';
 import { useEffect, useState } from 'react';
 import { ThemeChangeEvent } from '../events/ThemeChangeEvent';
-import { LavenderTheme } from '../themes';
+import { Themes } from '../themes';
+import { Theme } from '../config/Theme';
+import { ColorScheme } from '../types/Theme.type';
 
 export function ThemeEngine({ children }: { children: React.ReactNode }) {
-	const [theme, setTheme] = useState<Theme>(LavenderTheme);
+	const [theme, setTheme] = useState<Theme>(new Theme(Themes.Lavender, ColorScheme.LIGHT));
 
 	useEffect(() => {
 		document.addEventListener(ThemeChangeEvent.EVENT_NAME, event => {
@@ -13,5 +14,5 @@ export function ThemeEngine({ children }: { children: React.ReactNode }) {
 		});
 	});
 
-	return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+	return <ThemeProvider theme={theme.getTheme()}>{children}</ThemeProvider>;
 }

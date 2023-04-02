@@ -1,4 +1,4 @@
-import { Theme } from '../types/Theme.type';
+import { Theme } from '../config/Theme';
 
 export class ThemeChangeEvent extends Event {
 	public static EVENT_NAME = ThemeChangeEvent.name;
