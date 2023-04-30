@@ -5,7 +5,7 @@ import { Theme } from '@classes';
 import { ThemeChangeEvent } from '@events';
 import { Themes } from '@themes';
 
-export function ThemeEngine({ children }: { children: React.ReactNode }) {
+export function ThemeEngine({ children }: ChildrenProps) {
 	const [theme, setTheme] = useState<Theme>(new Theme(Themes.Lavender, ColorScheme.LIGHT));
 
 	useEffect(() => {
