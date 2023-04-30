@@ -1,8 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { ColorScheme, ITheme } from '@/types';
-import { ProductSansFont } from '@assets/fonts';
 
-const Presets = createGlobalStyle<{ theme: ITheme[ColorScheme] }>`
+export const Preset = createGlobalStyle<{ theme: ITheme[ColorScheme] }>`
   :root {
     --primary-color: ${props => props.theme.primary[0]};
     --secondary-color: ${props => props.theme.primary[1]};
@@ -21,17 +20,4 @@ const Presets = createGlobalStyle<{ theme: ITheme[ColorScheme] }>`
   }
 
   *, *::after, *::before { margin: 0; padding: 0; box-sizing: border-box; }
-
-  h1 {
-    color: var(--primary-color);
-  }
 `;
-
-export function GlobalStyles() {
-	return (
-		<>
-			<ProductSansFont />
-			<Presets />
-		</>
-	);
-}

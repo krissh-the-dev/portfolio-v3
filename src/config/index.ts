@@ -1,1 +1,1 @@
-export * from './style-config';
+export * from './BaseStyles';
