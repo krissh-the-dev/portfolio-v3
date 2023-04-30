@@ -9,7 +9,7 @@ export function ThemeEngine({ children }: ChildrenProps) {
 	const [theme, setTheme] = useState<Theme>(new Theme(Themes.Lavender, ColorScheme.LIGHT));
 
 	useEffect(() => {
-		document.addEventListener(ThemeChangeEvent.EVENT_NAME, event => {
+		document.addEventListener(ThemeChangeEvent.name, event => {
 			setTheme((event as ThemeChangeEvent).getTheme());
 		});
 	});

@@ -1,11 +1,10 @@
 import { Theme } from '@classes';
 
 export class ThemeChangeEvent extends Event {
-	public static EVENT_NAME = ThemeChangeEvent.name;
 	readonly #theme: Theme;
 
 	constructor(theme: Theme) {
-		super(ThemeChangeEvent.EVENT_NAME, { bubbles: true, cancelable: false });
+		super(ThemeChangeEvent.name, { bubbles: true, cancelable: false });
 		this.#theme = theme;
 	}
 
