@@ -1,4 +1,4 @@
-import { PaddingContainer } from '@/components/layouts';
+import { CenterContainer, PaddingContainer } from '@/components/layouts';
 import { ColorScheme } from '@/types';
 import { Theme } from '@classes';
 import { ThemeChangeEvent } from '@events';
@@ -12,8 +12,10 @@ export function Hero() {
 
 	return (
 		<PaddingContainer>
-			Hello
-			<button onClick={handleThemeChange}>Click</button>
+			<CenterContainer>
+				Hello
+				<button onClick={handleThemeChange}>Click</button>
+			</CenterContainer>
 		</PaddingContainer>
 	);
 }
