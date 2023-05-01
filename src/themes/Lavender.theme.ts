@@ -7,7 +7,7 @@ export const LavenderTheme: ITheme = {
 		text: '#251836'
 	},
 	dark: {
-		primary: ['#7000FF', '#8B31FF'],
+		primary: ['#9646FC', '#8B31FF'],
 		background: '#251836',
 		text: '#F4F1F8'
 	}

@@ -16,11 +16,13 @@ export function Hero() {
 		p {
 			font-size: 1.6rem;
 			font-weight: bold;
+			margin-bottom: 2rem;
 		}
 	`;
 
 	return (
 		<PaddingContainer>
+			<HeroBigText>KRIϟϟH</HeroBigText>
 			<HeroStyles>
 				<h1>Krishna Moorthy</h1>
 				<p>Passionate software developer</p>
@@ -29,3 +31,13 @@ export function Hero() {
 		</PaddingContainer>
 	);
 }
+
+const HeroBigText = styled.span`
+	font-size: 40rem;
+	z-index: -1;
+	opacity: 0.05;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+`;
