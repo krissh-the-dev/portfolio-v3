@@ -22,6 +22,7 @@
 			"@assets": ["src/assets"],
 			"@classes": ["src/classes"],
 			"@config": ["src/config"],
+			"@components": ["src/components"],
 			"@events": ["src/events"],
 			"@root": ["src/root/index"],
 			"@themes": ["src/themes"],
@@ -30,6 +31,7 @@
 			"@assets/*": ["src/assets/*"],
 			"@classes/*": ["src/classes/*"],
 			"@config/*": ["src/config/*"],
+			"@components/*": ["src/components/*"],
 			"@events/*": ["src/events/*"],
 			"@root/*": ["src/root/*"],
 			"@themes/*": ["src/themes/*"]

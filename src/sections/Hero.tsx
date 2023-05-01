@@ -1,4 +1,6 @@
-import { CenterContainer, PaddingContainer } from '@/components/layouts';
+import styled from 'styled-components';
+import { Button } from '@components/elements';
+import { CenterContainer, PaddingContainer } from '@components/layouts';
 import { ColorScheme } from '@/types';
 import { Theme } from '@classes';
 import { ThemeChangeEvent } from '@events';
@@ -10,12 +12,20 @@ export function Hero() {
 		document.dispatchEvent(new ThemeChangeEvent(theme));
 	};
 
+	const HeroStyles = styled(CenterContainer)`
+		p {
+			font-size: 1.6rem;
+			font-weight: bold;
+		}
+	`;
+
 	return (
 		<PaddingContainer>
-			<CenterContainer>
-				Hello
-				<button onClick={handleThemeChange}>Click</button>
-			</CenterContainer>
+			<HeroStyles>
+				<h1>Krishna Moorthy</h1>
+				<p>Passionate software developer</p>
+				<Button onClick={handleThemeChange}>Resume</Button>
+			</HeroStyles>
 		</PaddingContainer>
 	);
 }
